@@ -1,0 +1,237 @@
+{
+    "@context": {
+        "sit": "http://schema.sap.corp/ns/sit#",
+        "ord": "http://schema.sap.corp/ns/ord#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "cc": "http://creativecommons.org/ns#",
+        "as": "https://www.w3.org/ns/activitystreams#",
+        "ldp": "http://www.w3.org/ns/ldp#",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "vann": "http://purl.org/vocab/vann/",
+        "schema": "http://schema.org/",
+        "sap.s4.protocol": "http://schema.sap.com/s4/protocol#",
+        "sap.s4": "http://schema.sap.com/s4#",
+        "sap": "http://schema.sap.com/ns/sap#",
+        "cmp-mtls": "http://schema.sap.com/cmp/mtls#",
+        "preferredPrefix": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+        "comment": "rdfs:comment",
+        "label": "rdfs:label",
+        "domain": {
+            "@id": "rdfs:domain",
+            "@type": "@vocab"
+        },
+        "range": {
+            "@id": "rdfs:range",
+            "@type": "@vocab"
+        },
+        "subClassOf": {
+            "@id": "rdfs:subClassOf",
+            "@type": "@vocab"
+        },
+        "subPropertyOf": {
+            "@id": "rdfs:subPropertyOf",
+            "@type": "@vocab"
+        },
+        "seeAlso": {
+            "@id": "rdfs:seeAlso",
+            "@type": "@id"
+        },
+        "defines": {
+            "@reverse": "rdfs:isDefinedBy"
+        },
+        "domainIncludes": {
+            "@id": "schema:domainIncludes",
+            "@type": "@id"
+        },
+        "rangeIncludes": {
+            "@id": "schema:rangeIncludes",
+            "@type": "@id"
+        },
+        "includes": {
+            "@id": "sit:includes",
+            "@type": "@id"
+        },
+        "dataSource": {
+            "@id": "sit:dataSource",
+            "@type": "@id"
+        },
+        "title": {
+            "@id": "sit:title",
+            "@type": "xsd:string"
+        },
+        "description": {
+            "@id": "sit:description",
+            "@type": "xsd:langString"
+        },
+        "trigger": {
+            "@id": "sit:trigger",
+            "@type": "@id"
+        },
+        "template": {
+            "@id": "sit:template",
+            "@type": "@id"
+        },
+        "notification": {
+            "@id": "sit:notification",
+            "@type": "@id"
+        },
+        "navigationTarget": {
+            "@id": "sit:navigationTarget",
+            "@type": "@id"
+        },
+        "condition": {
+            "@id": "sit:condition",
+            "@type": "@id"
+        },
+        "expression": {
+            "@id": "sit:condition",
+            "@type": "xsd:string"
+        },
+        "action": {
+            "@id": "sit:action",
+            "@type": "xsd:string"
+        },
+        "event": {
+            "@id": "sit:event",
+            "@type": "@id"
+        },
+        "anchorObject": {
+            "@id": "sit:anchorObject",
+            "@type": "@id"
+        },
+        "parameter": {
+            "@id": "sit:parameter",
+            "@type": "xsd:string"
+        },
+        "anchorObjectDataSource": {
+            "@id": "sit:anchorObjectDataSource",
+            "@type": "@id"
+        },
+        "situationType": {
+            "@id": "sit:situationType",
+            "@type": "@id"
+        },
+        "situationInstance": {
+            "@id": "sit:situationType",
+            "@type": "@id"
+        },
+        "dataContext": {
+            "@id": "sit:dataContext",
+            "@type": "@id"
+        },
+        "semanticObject": {
+            "@id": "sit:semanticObject",
+            "@type": "xsd:string"
+        },
+        "entity": {
+            "@id": "sit:entity",
+            "@type": "xsd:string"
+        },
+        "time": {
+            "@id": "sit:time",
+            "@type": "xsd:dateTime"
+        },
+        "created": {
+            "@id": "sit:created",
+            "@type": "xsd:dateTime"
+        },
+        "status": {
+            "@id": "sit:status",
+            "@type": "@id"
+        },
+        "OPEN": "sit:OPEN",
+        "CLOSED": "sit:CLOSED",
+        "RESOLVED": "sit:RESOLVED",
+        "DELETED": "sit:DELETED",
+        "activityType": {
+            "@id": "sit:activityType",
+            "@type": "@id"
+        },
+        "CREATE": "sit:CREATE",
+        "MODIFY": "sit:MODIFY",
+        "DELETE": "sit:DELETE",
+        "Scenario": {
+            "@id": "sit:Scenario",
+            "@type": "@id"
+        },
+        "SituationTemplate": {
+            "@id": "sit:SituationTemplate",
+            "@type": "@id"
+        },
+        "SituationType": {
+            "@id": "sit:SituationType",
+            "@type": "@id"
+        },
+        "Situation": {
+            "@id": "sit:Situation",
+            "@type": "@id"
+        },
+        "SituationActivity": {
+            "@id": "sit:SituationActivity",
+            "@type": "@id"
+        },
+        "Trigger": {
+            "@id": "sit:Trigger",
+            "@type": "@id"
+        },
+        "Condition": {
+            "@id": "sit:Condition",
+            "@type": "@id"
+        },
+        "Notification": {
+            "@id": "sit:Notification",
+            "@type": "@id"
+        }
+    },
+    "@id": "http://schema.sap.corp/ns/sit",
+    "@type": "owl:Ontology",
+    "label": "The Situation Handling Configuration Vocabulary",
+    "comment": "A lightweight vocabulary for situation handling configuration",
+    "seeAlso": "https://pages.github.tools.sap/CentralEngineering/open-resource-discovery-specification/spec-v1/interfaces/document",
+    "preferredPrefix": "sit",
+    "dcterms:description": "The Situation Handling Vocabulary is a lightweight vocabulary to create descriptions of Situation Scenarios.",
+    "dcterms:rights": "Copyright Â© 2023 SAP",
+    "dcterms:publisher": "SAP SE",
+    "cc:license": "http://creativecommons.org/licenses/by/4.0/",
+    "defines": [
+        {
+            "@id": "SituationTemplate",
+            "rdf:type": "rdfs:Class",
+            "label": "Situation Template",
+            "comment": "A Situation Template is a Situation Type prototype. The user can adapt certain properties"
+        },
+        {
+            "@id": "SituationType",
+            "rdf:type": "rdfs:Class",
+            "label": "Situation Type",
+            "comment": "A Situation Type defines a situation. A Situation always has a Situation Type"
+        },
+                {
+            "@id": "Situation",
+            "rdf:type": "rdfs:Class",
+            "label": "Situation",
+            "comment": "Situation denotes a concrete situation occurrence."
+        },
+        {
+            "@id": "Scenario",
+            "rdf:type": "rdfs:Class",
+            "label": "Situation Scenario",
+            "comment": "A Situation Scenario is a collection of resources for situation handling."
+        },
+        {
+            "@id": "Trigger",
+            "rdf:type": "rdfs:Class",
+            "label": "Situation Trigger",
+            "comment": "A Situation Trigger is a starting point for situation dection."
+        },
+        {
+            "@id": "Condition",
+            "rdf:type": "rdfs:Class",
+            "label": "Situation Condition",
+            "comment": "A Situation Condition is a used to detect situations."
+        }
+    ]
+}
